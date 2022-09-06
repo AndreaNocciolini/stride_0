@@ -1,0 +1,68 @@
+
+
+.App {
+  text-align: center;
+  background-color: #242424;
+}
+
+.App-container {
+  background-color: #1f1f1f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .new-note {
+    color: #01001e;
+    box-shadow: #1f1f1f;
+    background-color: #716fb2;
+    margin-top: 1em;
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: 0;
+
+    // font-size: 17px;
+    font-weight: 500;
+    filter: drop-shadow(4px 12px 24px rgba(0, 0, 0, 0.25));
+
+    svg {
+      margin-right: 20px;
+    }
+  }
+
+  //Notes
+  .notes-container {
+    width: 80%;
+    background-color: #242424;
+    min-height: 200px;
+    max-height: 840px;
+    overflow-y: auto;
+    border-radius: 32px;
+    filter: drop-shadow(4px 12px 24px rgba(0, 0, 0, 0.25));
+    padding: 80px 160px;
+
+    .title {
+      font-size: 54px;
+      font-weight: bold;
+      margin-bottom: 64px;
+    }
+
+    .note-animation-enter {
+      opacity: 0;
+    }
+    .note-animation-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+    .note-animation-exit {
+      opacity: 1;
+    }
+    .note-animation-exit-active {
+      opacity: 0;
+      transition: opacity 500ms ease-in;
+    }
+  }
+}

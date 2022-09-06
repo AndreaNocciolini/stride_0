@@ -1,0 +1,41 @@
+// .render {
+//     opacity: 1;
+// }
+
+// .re-render {
+//     opacity: 1;
+// }
+
+.SingleNote {
+    margin-bottom: 40px;
+
+    .buttons-container {
+        button {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+
+            .bin {
+                margin: 0px 20px 0px 0px;
+            }
+
+            .check {
+                margin: 0px 0px 0px 20px;
+            }
+        }
+    }
+
+    .note-text {
+        margin-left: 24px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .checked {
+        text-decoration: line-through;
+    }
+}
