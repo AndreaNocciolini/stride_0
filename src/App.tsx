@@ -30,7 +30,7 @@ function App() {
             <h1 className='title'>Titolo</h1>
             <TransitionGroup>
               {
-                notes.map((note: Note, index: number) => (
+                notes.filter((e: any) => !e.done).map((note: Note, index: number) => (
                   <CSSTransition
                     key={index}
                     timeout={500}
@@ -42,7 +42,7 @@ function App() {
                 ).reverse()
               }
             </TransitionGroup>
-            {/* <TransitionGroup>
+            <TransitionGroup>
               {
                 notes.filter((e: any) => e.done).map((note: Note, index: number) => (
                   <CSSTransition
@@ -55,7 +55,7 @@ function App() {
                 )
                 ).reverse()
               }
-            </TransitionGroup> */}
+            </TransitionGroup>
           </div>
         </div>
         <div>
