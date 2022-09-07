@@ -41,8 +41,6 @@ function App() {
                 )
                 ).reverse()
               }
-            </TransitionGroup>
-            <TransitionGroup>
               {
                 notes.filter((e: any) => e.done).map((note: Note, index: number) => (
                   <CSSTransition
